@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Harika Kanakam Portfolio Website</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/icon.jpg">
+
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
@@ -12,26 +14,28 @@
 </head>
 <body>
 <div id="header">
+  <nav class="headermenu">
+    <img src="images/logooo.png" class="logo">
+        <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <!-- <li><a href="#certifications">Certifications</a></li> -->
+            <li><a href="#portfolio">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+  </nav>
     <div class="container">
-        <nav>
-            <img src="images/logooo.png" class="logo">
-            <ul id="sidemenu">
-                <li><a href="#header">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <!-- <li><a href="#certifications">Certifications</a></li> -->
-                <li><a href="#portfolio">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <i class="fas fa-times" onclick="closemenu()"></i>
-            </ul>
-            <i class="fas fa-bars" onclick="openmenu()"></i>
-        </nav>
+      
         <div class="header-text">
             
             <h1>Hi, I'm <span>Harika</span><br>Kanakam</h1>
-            <p>Data Scientist</p>
-            <p>Data Analyst</p>
-            <p>Machine Learning Engineer</p>
+            <h1>
+              <span class="text_1">Data Scientist</span><span class="text_2">ML Engineer</span><span class="text_3">Data Analyst</span>
+            </h1>
+
             <!-- <p class="s-h-p">Embrace excellence, embrace changes, embrace data..!!</p> -->
         </div>
     </div>
@@ -538,54 +542,51 @@
               </a>
             </li>
             <li class="project-post-item">
-                <a href="https://github.com/harikakanakam/User-Interactive-Image-Classification" target="_blank">
-                  <figure class="project-banner-box">
-                    <img src="images/img-classification-UI.jpg" alt="Image Classification and Segmentation" loading="lazy">
-                  </figure>
+              <a href="https://github.com/harikakanakam/User-Interactive-Image-Classification" target="_blank">
+                <figure class="project-banner-box">
+                  <img src="images/img-classification-UI.jpg" alt="Image Classification and Segmentation" loading="lazy">
+                </figure>
   
-                  <div class="project-content">
+                <div class="project-content">
   
-                    <div class="project-meta">
-                      <p class="project-category">Object Detection</p>
-                      <span class="dot"></span>
-                      <p class="project-category">Object Segmentation</p>
-                      <span class="dot"></span>
-                      <p class="project-category">Deployment</p>
-                    </div>
-  
-                    <h3 class="h4 project-item-title">User User Interactive Image Classification</h3>
-                      <p class="project-text">
-                        Developed a user interactive platform to extract the objects with/without the background from the user uploaded images.
-                      </p>
-                    
-                      <p class="project-text">
-                        Utilized Mask R-CNN for image classification and segmentation, achieving a 95\% extraction rate for the classes known by model.
-                      </p>
-                    
-                      <p class="project-text">
-                        Leveraged the application by using FastAPI and ReactJS frameworks for backend and frontend and hosted on AWS cloud, thereby providing a solution that is reliable, flexible, and scalable.
-                      </p>
-  
-                      <div class="project-tech">
-                        <span class="tech">Python</span>
-                      </div>
-                      <div class="project-tech">
-                        <span class="tech">AWS</span>
-                      </div>
-                      <div class="project-tech">
-                        <span class="tech">ReactJS</span>
-                      </div>
-                      <div class="project-tech">
-                        <span class="tech">Mask R-CNN</span>
-                      </div>
-                      <div class="project-tech">
-                        <span class="tech">FastAPI</span>
-                      </div>
-  
+                  <div class="project-meta">
+                    <p class="project-category">Object Detection</p>
+                    <span class="dot"></span>
+                    <p class="project-category">Object Segmentation</p>
+                    <span class="dot"></span>
+                    <p class="project-category">Deployment</p>
                   </div>
   
-                </a>
-              </li>
+                  <h3 class="h4 project-item-title">User User Interactive Image Classification</h3>
+                    <p class="project-text">
+                      Developed a user interactive platform to extract the objects with/without the background from the user uploaded images.
+                    </p>   
+                    <p class="project-text">
+                      Utilized Mask R-CNN for image classification and segmentation, achieving a 95\% extraction rate for the classes known by model.
+                    </p>
+                    <p class="project-text">
+                      Leveraged the application by using FastAPI and ReactJS frameworks for backend and frontend and hosted on AWS cloud, thereby providing a solution that is reliable, flexible, and scalable.
+                    </p>
+                    <div class="project-tech">
+                      <span class="tech">Python</span>
+                    </div>
+                    <div class="project-tech">
+                      <span class="tech">AWS</span>
+                    </div>
+                    <div class="project-tech">
+                      <span class="tech">ReactJS</span>
+                    </div>
+                    <div class="project-tech">
+                      <span class="tech">Mask R-CNN</span>
+                    </div>
+                    <div class="project-tech">
+                      <span class="tech">FastAPI</span>
+                    </div>
+                   <h3></h3> 
+                </div>
+  
+              </a>
+            </li>
   
             <li class="project-post-item">
                 <a href="https://github.com/harikakanakam/Home-Credit-Default-Risk-Prediction" target="_blank">
@@ -718,8 +719,8 @@
                 <a href="images/Harika_Kanakam_Resume_v3.3.pdf" download class="btn btn2">Download Resume</a>
             </div>
             
-            <!-- <div class="contact-right">
-              <form 
+            <div class="contact-right">
+              <!-- <form 
               action="https://docs.google.com/forms/d/e/1FAIpQLSe2s297J-N55U_QvRTq6Um1Ili4sEDBtNSy_L52ZgI_L12Htg/formResponse" 
               class="form" target="_blank"
               data-form>
@@ -738,14 +739,14 @@
                 <span>Send Message</span>
               </button>
 
-            </form>
-                <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="Email" placeholder="Your Email" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
-                </form>
-                <span id="msg"></span> -->
+            </form> -->
+            <!-- <form name="submit-to-google-sheet" method="post" action="send_email.php">
+              <input type="text" name="Name" placeholder="Your Name" required>
+              <input type="email" name="Email" placeholder="Your Email" required>
+              <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+          </form> -->
+                <span id="msg"></span>
             </div>
         </div>
     </div>
@@ -788,22 +789,22 @@
 </script>
 
 <script>
-    const scriptURL = 'https://forms.gle/VjycenJbVcooa3he7'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
+    // const scriptURL = 'https://forms.gle/VjycenJbVcooa3he7'
+    // const form = document.forms['submit-to-google-sheet']
+    // const msg = document.getElementById("msg")
   
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML = "Message sent successfully"
-            setTimeout(function(){
-                msg.innerHTML = ""
-            },5000)
-            form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
+    // form.addEventListener('submit', e => {
+    //   e.preventDefault()
+    //   fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    //     .then(response => {
+    //         msg.innerHTML = "Message sent successfully"
+    //         setTimeout(function(){
+    //             msg.innerHTML = ""
+    //         },5000)
+    //         form.reset()
+    //     })
+    //     .catch(error => console.error('Error!', error.message))
+    // })
   </script>
 
 </body>
