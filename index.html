@@ -1,127 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Harika Kanakam Portfolio Website</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="images/icon.jpg">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harika Kanakam Portfolio Website</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="images/icon.jpg">
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
-    
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+
 </head>
-<body>
-<div id="header">
-  <nav class="headermenu">
-    <img src="images/logooo.png" class="logo">
-        <ul id="sidemenu">
-            <li><a href="#header">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <!-- <li><a href="#certifications">Certifications</a></li> -->
-            <li><a href="#portfolio">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <i class="fas fa-times" onclick="closemenu()"></i>
-        </ul>
-        <i class="fas fa-bars" onclick="openmenu()"></i>
-  </nav>
-    <div class="container">
-      
-        <div class="header-text">
-            
-            <h1>Hi, I'm <span>Harika</span><br>Kanakam</h1>
-            <h1>
-              <span class="text_1">Data Scientist</span><span class="text_2">ML Engineer</span><span class="text_3">Data Analyst</span>
-            </h1>
 
-            <!-- <p class="s-h-p">Embrace excellence, embrace changes, embrace data..!!</p> -->
-        </div>
-    </div>
-</div>
-<!-- -----------about---------- -->
-<div id="about">
+<body>
+  <div id="header">
+    <nav class="headermenu">
+      <img src="images/logooo.png" class="logo">
+      <ul id="sidemenu">
+        <li><a href="#header">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <!-- <li><a href="#certifications">Certifications</a></li> -->
+        <li><a href="#portfolio">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        
+        <a class="si" href="https://www.linkedin.com/in/harikakanakam" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+        &nbsp;
+        <a class="si" href="https://www.github.com/harikakanakam" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+        <i class="fas fa-times" onclick="closemenu()"></i>
+      </ul>
+      <i class="fas fa-bars" onclick="openmenu()"></i>
+    </nav>
     <div class="container">
-        <div class="row">
-            <!-- <div class="about-col-1">
+
+      <div class="header-text">
+
+        <h1>Hi, I'm <span>Harika</span><br>Kanakam</h1>
+        <h1>
+          <span class="text_1">Data Scientist</span><span class="text_2">ML Engineer</span><span class="text_3">Data Analyst</span>
+        </h1>
+
+        <!-- <p class="s-h-p">Embrace excellence, embrace changes, embrace data..!!</p> -->
+      </div>
+    </div>
+  </div>
+  <!-- -----------about---------- -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <!-- <div class="about-col-1">
                 <img class="skills" src="images/Picture1.png">
             </div> -->
-            <div class="about-col-2">
-                <h1 class="sub-title">About Me</h1><br>
-                <!-- <h4>With a strong belief that Data is the new Oil, I am a results-driven Data analyst/engineer with a passion for transforming raw data into actionable insights. With a strong foundation in databases, statistics, programming, and data visualization, I thrive in the dynamic world of Data Analysis!</h4> -->
-                <h4> Skilled data scientist with over 3+ years of proven expertise in developing predictive models, machine learning solutions, and automation scripts to drive operational efficiency and achieve strategic business objectives. Currently pursuing Master's degree in Data Science at Indiana University-Bloomington to deepen theoretical knowledge and stay at the forefront of industry advancements in Data Science. </h4>
-                <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('professionalexperience')">Professional Experience</p>
-                    <p class="tab-links" onclick="opentab('academicexperience')">Academic Experience</p>
-                    <p class="tab-links" onclick="opentab('internships')">Internships</p>
-                    <p class="tab-links" onclick="opentab('education')">Education</p>
-                    <!-- <p class="tab-links" onclick="opentab('publication')">Publication</p> -->
-                    
-                </div>
-                <div class="tab-contents active-tab" id="professionalexperience">
-                    <ul>
-                        <!-- <img class="exp-logo" src="images/Deloitte Logoo.png"> -->
-                        <li><span style="font-weight: bold;">Knowledge Lens: A Rockwell Automation Comapny | Bangalore, India
-                            <br>Senior Big Data Engineer ( May 2019 - March 2021 )</span><span></span><br>
-                            <ul>
-                                <li>Designed a scalable, optimized and efficient architecture using SQL and communicated data insights through visualizations.</li>
-                                <li>Performed quantitative research to drive continuous improvement of product, resulting in a 10% reduction in production costs.</li>
-                                <li>Collaborated with cross-functional teams to conduct workload assessments and devised unique strategies to optimize operations.</li>
-                                <li>Monitored user sessions using AWS Cognito, CloudWatch Logs, Redis cache datastore delivering 40% spike in productivity.</li>
-                                <li>Revamped REST APIs by mentoring the team through code reviews resulting in 20% faster delivery and 35% bug reduction.</li>
-                                <li> Mentor team members help come up to speed, encourage quality through code reviews and qualitative test coverage.</li>
-                                <li>Deployed network restricted applications using AWS Kubernetes pods to enhance network security and technical solutions.</li>
-                              </ul> 
-                        <br>
-                        <li><span style="font-weight: bold;">Junior Data Scientist( May 2019 - March 2021 )</span><span></span><br>
-                            <ul>
-                                <li>Collaborated with DevOps team to orchestrate Linux services and GIT CI/CD deployments, reducing execution time by 10%</li>
-                                <li>Performed hands-on data analysis and modeling with large data sets, including discovering data from sources(local, s3, azure), getting data access, cleaning up data, and making them “model-ready”.</li>
-                                <li>Automated the process of job monitoring and executed data migrations seamlessly, transferring data from MySQL to AWS S3.</li>
-                                <li>Utilized the capability of ML and data mining for predictive analysis, to forecast deployment status with 95% accuracy.</li>
-                                <li>Designed migration flow for microservices platform hosted on AWS using FastAPI, conducted analytics on stakeholder feedback.</li>
-                              </ul> 
-                    </ul>
-                </div>
-                <div class="tab-contents" id="academicexperience">
-                    <ul>
-                        <!-- <img class="exp-logo" src="images/Deloitte Logoo.png"> -->
-                        <li><span style="font-weight: bold;">Indiana University | Bloomington, IN, USA
-                            <br>research Assistant ( Summer 2023 )</span><span></span><br>
-                            <ul>
-                                <li>Conducted data extraction and transformation by parsing XML and SAS files to convert them into datasets to train ML models.</li>
-                                <li>Engineered a specialized algorithm that analyzes publicly available financial reports, such as annual filings (10-K Forms).</li>
-                                <li>Evaluated and analyzed time horizons of companies, helping investors with valuable insights to identify potential risk factors.</li>
-                              </ul>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="internships">
-                    <ul>
-                        <li><span style="font-weight: bold;">Knowledge Lens: A Rockwell Automation Comapny | Bangalore, India
-                            <br>Junior Data Scientist ( january 2019 - April 2019 )</span><span></span><br>
-                            <ul>
-                                <li>Optimized job success rates by applying problem-solving skills to existing ML models, elevating the rate from 82% to 93%.</li>
-                                <li>Proficiently engineered backend services to execute GIT operations and validate Docker deployment files using Python Flask.</li>
-                            </ul> 
-                    </ul>
-                </div>
-                
-                <div class="tab-contents" id="education">
-                    <ul>
-                        <!-- <img class="buff-logo" src="images/buf-logo.png"> -->
-                        <li><span style="font-weight: bold;"> Indiana University | Bloomington, IN, USA</span><br>Master of Science in Data Science (Aug 2022 - May 2024)</li>
-                        <!-- <img class="srm-logo" src="images/srm_logoi.png"> -->
-                        <br>
-                        <li><span style="font-weight: bold;">Madanapalle Institute of Technology & Science | Madanapalle, India</span><br>Bachelor of Technology in Computer Science & Engineering (July 2015 - May 2019)</li>
-                    </ul>
-                </div>
-            </div>
-            
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1><br>
+          <!-- <h4>With a strong belief that Data is the new Oil, I am a results-driven Data analyst/engineer with a passion for transforming raw data into actionable insights. With a strong foundation in databases, statistics, programming, and data visualization, I thrive in the dynamic world of Data Analysis!</h4> -->
+          <h4> Skilled data scientist with over 3+ years of proven expertise in developing predictive models, machine
+            learning solutions, and automation scripts to drive operational efficiency and achieve strategic business
+            objectives. Currently pursuing Master's degree in Data Science at Indiana University-Bloomington to deepen
+            theoretical knowledge and stay at the forefront of industry advancements in Data Science. </h4>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('professionalexperience')">Professional Experience</p>
+            <p class="tab-links" onclick="opentab('academicexperience')">Academic Experience</p>
+            <p class="tab-links" onclick="opentab('internships')">Internships</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+            <!-- <p class="tab-links" onclick="opentab('publication')">Publication</p> -->
 
+          </div>
+          <div class="tab-contents active-tab" id="professionalexperience">
+            <ul>
+              <!-- <img class="exp-logo" src="images/Deloitte Logoo.png"> -->
+              <li><span style="font-weight: bold;">Knowledge Lens: A Rockwell Automation Comapny | Bangalore, India
+                  <br>Senior Big Data Engineer ( May 2019 - March 2021 )</span><span></span><br>
+                <ul>
+                  <li>Designed a scalable, optimized and efficient architecture using SQL and communicated data insights
+                    through visualizations.</li>
+                  <li>Performed quantitative research to drive continuous improvement of product, resulting in a 10%
+                    reduction in production costs.</li>
+                  <li>Collaborated with cross-functional teams to conduct workload assessments and devised unique
+                    strategies to optimize operations.</li>
+                  <li>Monitored user sessions using AWS Cognito, CloudWatch Logs, Redis cache datastore delivering 40%
+                    spike in productivity.</li>
+                  <li>Revamped REST APIs by mentoring the team through code reviews resulting in 20% faster delivery and
+                    35% bug reduction.</li>
+                  <li> Mentor team members help come up to speed, encourage quality through code reviews and qualitative
+                    test coverage.</li>
+                  <li>Deployed network restricted applications using AWS Kubernetes pods to enhance network security and
+                    technical solutions.</li>
+                </ul>
+                <br>
+              <li><span style="font-weight: bold;">Junior Data Scientist( May 2019 - March 2021
+                  )</span><span></span><br>
+                <ul>
+                  <li>Collaborated with DevOps team to orchestrate Linux services and GIT CI/CD deployments, reducing
+                    execution time by 10%</li>
+                  <li>Performed hands-on data analysis and modeling with large data sets, including discovering data
+                    from sources(local, s3, azure), getting data access, cleaning up data, and making them
+                    “model-ready”.</li>
+                  <li>Automated the process of job monitoring and executed data migrations seamlessly, transferring data
+                    from MySQL to AWS S3.</li>
+                  <li>Utilized the capability of ML and data mining for predictive analysis, to forecast deployment
+                    status with 95% accuracy.</li>
+                  <li>Designed migration flow for microservices platform hosted on AWS using FastAPI, conducted
+                    analytics on stakeholder feedback.</li>
+                </ul>
+            </ul>
+          </div>
+          <div class="tab-contents" id="academicexperience">
+            <ul>
+              <!-- <img class="exp-logo" src="images/Deloitte Logoo.png"> -->
+              <li><span style="font-weight: bold;">Indiana University | Bloomington, IN, USA
+                  <br>research Assistant ( Summer 2023 )</span><span></span><br>
+                <ul>
+                  <li>Conducted data extraction and transformation by parsing XML and SAS files to convert them into
+                    datasets to train ML models.</li>
+                  <li>Engineered a specialized algorithm that analyzes publicly available financial reports, such as
+                    annual filings (10-K Forms).</li>
+                  <li>Evaluated and analyzed time horizons of companies, helping investors with valuable insights to
+                    identify potential risk factors.</li>
+                </ul>
+            </ul>
+          </div>
+          <div class="tab-contents" id="internships">
+            <ul>
+              <li><span style="font-weight: bold;">Knowledge Lens: A Rockwell Automation Comapny | Bangalore, India
+                  <br>Junior Data Scientist ( january 2019 - April 2019 )</span><span></span><br>
+                <ul>
+                  <li>Optimized job success rates by applying problem-solving skills to existing ML models, elevating
+                    the rate from 82% to 93%.</li>
+                  <li>Proficiently engineered backend services to execute GIT operations and validate Docker deployment
+                    files using Python Flask.</li>
+                </ul>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="education">
+            <ul>
+              <!-- <img class="buff-logo" src="images/buf-logo.png"> -->
+              <li><span style="font-weight: bold;"> Indiana University | Bloomington, IN, USA</span><br>Master of
+                Science in Data Science (Aug 2022 - May 2024)</li>
+              <!-- <img class="srm-logo" src="images/srm_logoi.png"> -->
+              <br>
+              <li><span style="font-weight: bold;">Madanapalle Institute of Technology & Science | Madanapalle,
+                  India</span><br>Bachelor of Technology in Computer Science & Engineering (July 2015 - May 2019)</li>
+            </ul>
+          </div>
         </div>
+
+
+      </div>
     </div>
-</div>
+  </div>
 
 
 
@@ -129,8 +161,8 @@
 
 
 
-<!-- ---------certifications---------------- -->
-<!-- <div id="portfolio">
+  <!-- ---------certifications---------------- -->
+  <!-- <div id="portfolio">
     <div class="container">
         <h1 class="sub-title">My Projects</h1>
         <div class="work-list">
@@ -145,34 +177,34 @@
         -->
 
 
-<!-- ----------portfolio------------ -->
-  <div id = "skills">
+  <!-- ----------portfolio------------ -->
+  <div id="skills">
     <div class="container">
-        <h1 class="sub-title">My skills</h1>
-        <section class="skill">
+      <h1 class="sub-title">My Skills</h1>
+      <section class="skill">
 
 
-            <!-- 
+        <!-- 
               Languages 
             -->
 
-            <h5 class="h3 skill-category">Languages</h5>
+        <h5 class="h3 skill-category">Languages</h5>
 
-            <ul class="skill-list">
+        <ul class="skill-list">
 
-              <li class="skill-item">
+          <li class="skill-item">
 
-                <div class="skill-icon-box">
-                  <img src="images/python.png" alt="Python icon" width="40">
-                </div>
+            <div class="skill-icon-box">
+              <img src="images/python.png" alt="Python icon" width="40">
+            </div>
 
-                <div class="skill-content-box">
-                  Python
-                </div>
+            <div class="skill-content-box">
+              Python
+            </div>
 
-              </li>
+          </li>
 
-              <!-- <li class="skill-item">
+          <!-- <li class="skill-item">
 
                 <div class="skill-icon-box">
                   <img src="images/rust.png" alt="Rust icon" width="40">
@@ -184,7 +216,7 @@
 
               </li> -->
 
-              <!-- <li class="skill-item">
+          <!-- <li class="skill-item">
 
                 <div class="skill-icon-box">
                   <img src="images/typescript.png" alt="Typescript icon" width="40">
@@ -196,43 +228,43 @@
 
               </li> -->
 
-              <li class="skill-item">
+          <li class="skill-item">
 
-                <div class="skill-icon-box">
-                  <img src="images/c.png" alt="C icon" width="40">
-                </div>
+            <div class="skill-icon-box">
+              <img src="images/c.png" alt="C icon" width="40">
+            </div>
 
-                <div class="skill-content-box">
-                C++
-                </div>
+            <div class="skill-content-box">
+              C++
+            </div>
 
-              </li>
+          </li>
 
-              <li class="skill-item">
+          <li class="skill-item">
 
-                <div class="skill-icon-box">
-                  <img src="images/java.png" alt="Java icon" width="40">
-                </div>
+            <div class="skill-icon-box">
+              <img src="images/java.png" alt="Java icon" width="40">
+            </div>
 
-                <div class="skill-content-box">
-                  Java
-                </div>
+            <div class="skill-content-box">
+              Java
+            </div>
 
-              </li>
+          </li>
 
-              <li class="skill-item">
+          <li class="skill-item">
 
-                <div class="skill-icon-box">
-                  <img src="images/sql.png" alt="SQL icon" width="40">
-                </div>
+            <div class="skill-icon-box">
+              <img src="images/sql.png" alt="SQL icon" width="40">
+            </div>
 
-                <div class="skill-content-box">
-                  SQL
-                </div>
+            <div class="skill-content-box">
+              SQL
+            </div>
 
-              </li>
+          </li>
 
-              <!-- <li class="skill-item">
+          <!-- <li class="skill-item">
 
                 <div class="skill-icon-box">
                   <img src="images/js.png" alt="JavaScript icon" width="40">
@@ -244,101 +276,101 @@
 
               </li> -->
 
-            </ul>
+        </ul>
 
-            <!-- 
+        <!-- 
               Frameworks & Libraries 
             -->
 
-            <h5 class="h3 skill-category">Frameworks & Libraries</h5>
+        <h5 class="h3 skill-category">Frameworks & Libraries</h5>
 
-            <ul class="skill-list">
+        <ul class="skill-list">
 
-              <li class="skill-item">
+          <li class="skill-item">
 
-                <div class="skill-icon-box">
-                  <img src="images/aws.svg" alt="AWS icon" width="40">
-                </div>
+            <div class="skill-icon-box">
+              <img src="images/aws.svg" alt="AWS icon" width="40">
+            </div>
 
-                <div class="skill-content-box">
-                  AWS Services
-                </div>
+            <div class="skill-content-box">
+              AWS Services
+            </div>
 
-              </li>
+          </li>
 
-              <li class="skill-item">
+          <li class="skill-item">
 
-                <div class="skill-icon-box">
-                  <img src="images/awscdk.svg" alt="AWSCDK icon" width="40">
-                </div>
+            <div class="skill-icon-box">
+              <img src="images/awscdk.svg" alt="AWSCDK icon" width="40">
+            </div>
 
-                <div class="skill-content-box">
-                  AWS CDK
-                </div>
+            <div class="skill-content-box">
+              AWS CDK
+            </div>
 
-              </li>
+          </li>
 
-              <li class="skill-item">
+          <li class="skill-item">
 
-                <div class="skill-icon-box">
-                  <img src="images/pytorch.png" alt="PyTorch icon" width="40">
-                </div>
+            <div class="skill-icon-box">
+              <img src="images/pytorch.png" alt="PyTorch icon" width="40">
+            </div>
 
-                <div class="skill-content-box">
-                  PyTorch
-                </div>
+            <div class="skill-content-box">
+              PyTorch
+            </div>
 
-              </li>
+          </li>
 
-              <li class="skill-item">
+          <li class="skill-item">
 
-                <div class="skill-icon-box">
-                  <img src="images/tensorflow.png" alt="TensorFlow icon" width="40">
-                </div>
+            <div class="skill-icon-box">
+              <img src="images/tensorflow.png" alt="TensorFlow icon" width="40">
+            </div>
 
-                <div class="skill-content-box">
-                  TensorFlow
-                </div>
+            <div class="skill-content-box">
+              TensorFlow
+            </div>
 
-              </li>
+          </li>
 
-              <li class="skill-item">
+          <li class="skill-item">
 
-                <div class="skill-icon-box">
-                  <img src="images/huggingface.png" alt="Hugging Face icon" width="40">
-                </div>
+            <div class="skill-icon-box">
+              <img src="images/huggingface.png" alt="Hugging Face icon" width="40">
+            </div>
 
-                <div class="skill-content-box">
-                  Hugging Face
-                </div>
+            <div class="skill-content-box">
+              Hugging Face
+            </div>
 
-              </li>
+          </li>
 
-              <li class="skill-item">
+          <li class="skill-item">
 
-                <div class="skill-icon-box">
-                  <img src="images/numpy.png" alt="NumPy icon" width="40">
-                </div>
+            <div class="skill-icon-box">
+              <img src="images/numpy.png" alt="NumPy icon" width="40">
+            </div>
 
-                <div class="skill-content-box">
-                  NumPy
-                </div>
+            <div class="skill-content-box">
+              NumPy
+            </div>
 
-              </li>
+          </li>
 
-              <li class="skill-item">
+          <li class="skill-item">
 
-                <div class="skill-icon-box">
-                  <img src="images/pandas.png" alt="Pandas icon" width="40">
-                </div>
+            <div class="skill-icon-box">
+              <img src="images/pandas.png" alt="Pandas icon" width="40">
+            </div>
 
-                <div class="skill-content-box">
-                  Pandas
-                </div>
+            <div class="skill-content-box">
+              Pandas
+            </div>
 
-              </li>
+          </li>
 
-              <!-- <li class="skill-item">
+          <!-- <li class="skill-item">
 
                 <div class="skill-icon-box">
                   <img src="images/flutter.png" alt="Flutter icon" width="40">
@@ -350,89 +382,89 @@
 
               </li> -->
 
-            </ul>
+        </ul>
 
-            <!-- 
+        <!-- 
               Tools & OS 
             -->
 
-            <h5 class="h3 skill-category">Tools & OS</h5>
+        <h5 class="h3 skill-category">Tools & OS</h5>
 
-            <ul class="skill-list">
+        <ul class="skill-list">
 
-              <li class="skill-item">
+          <li class="skill-item">
 
-                <div class="skill-icon-box">
-                  <img src="images/postgressql.png" alt="PostgresSQL" width="40">
-                </div>
+            <div class="skill-icon-box">
+              <img src="images/postgressql.png" alt="PostgresSQL" width="40">
+            </div>
 
-                <div class="skill-content-box">
-                  PostgresSQL
-                </div>
+            <div class="skill-content-box">
+              PostgresSQL
+            </div>
 
-              </li>
+          </li>
 
-              <li class="skill-item">
+          <li class="skill-item">
 
-                <div class="skill-icon-box">
-                  <img src="images/docker.png" alt="Docker icon" width="40">
-                </div>
+            <div class="skill-icon-box">
+              <img src="images/docker.png" alt="Docker icon" width="40">
+            </div>
 
-                <div class="skill-content-box">
-                  Docker
-                </div>
+            <div class="skill-content-box">
+              Docker
+            </div>
 
-              </li>
+          </li>
 
-              <li class="skill-item">
+          <li class="skill-item">
 
-                <div class="skill-icon-box">
-                  <img src="images/apache_hadoop.png" alt="Apache Hadoop" width="40">
-                </div>
+            <div class="skill-icon-box">
+              <img src="images/apache_hadoop.png" alt="Apache Hadoop" width="40">
+            </div>
 
-                <div class="skill-content-box">
-                  Apache Hadoop
-                </div>
+            <div class="skill-content-box">
+              Apache Hadoop
+            </div>
 
-              </li>
+          </li>
 
-              <li class="skill-item">
+          <li class="skill-item">
 
-                <div class="skill-icon-box">
-                  <img src="images/apache_spark.png" alt="Apache Spark icon" width="40">
-                </div>
+            <div class="skill-icon-box">
+              <img src="images/apache_spark.png" alt="Apache Spark icon" width="40">
+            </div>
 
-                <div class="skill-content-box">
-                  Apache Spark
-                </div>
+            <div class="skill-content-box">
+              Apache Spark
+            </div>
 
-              </li>
+          </li>
 
-              <li class="skill-item">
+          <li class="skill-item">
 
-                <div class="skill-icon-box">
-                  <img src="images/mysql.png" alt="MySQL icon" width="40">
-                </div>
+            <div class="skill-icon-box">
+              <img src="images/mysql.png" alt="MySQL icon" width="40">
+            </div>
 
-                <div class="skill-content-box">
-                  MySQL
-                </div>
+            <div class="skill-content-box">
+              MySQL
+            </div>
 
-              </li>
+          </li>
 
-              <li class="skill-item">
+          <li class="skill-item">
 
-                <div class="skill-icon-box">
-                  <img src="images/tableau.svg" alt="Tableau icon" width="40">
-                </div>
+            <div class="skill-icon-box">
+              <img src="images/tableau.svg" alt="Tableau icon" width="40">
+            </div>
 
-                <div class="skill-content-box">
-                  Tableau
-                </div>
+            <div class="skill-content-box">
+              Tableau
+            </div>
 
-              </li>
+          </li>
 
-              <!-- <li class="skill-item">
+          <!-- <li class="skill-item">
 
                 <div class="skill-icon-box">
                   <img src="images/html.png" alt="HTML icon" width="40">
@@ -456,7 +488,7 @@
 
               </li> -->
 
-              <!-- <li class="skill-item">
+          <!-- <li class="skill-item">
 
                 <div class="skill-icon-box">
                   <img src="images/unity.png" alt="Unity icon" width="40">
@@ -468,259 +500,274 @@
 
               </li> -->
 
-              <li class="skill-item">
+          <li class="skill-item">
 
-                <div class="skill-icon-box">
-                  <img src="images/linux.png" alt="Linux icon" width="40">
-                </div>
+            <div class="skill-icon-box">
+              <img src="images/linux.png" alt="Linux icon" width="40">
+            </div>
 
-                <div class="skill-content-box">
-                  Linux
-                </div>
+            <div class="skill-content-box">
+              Linux
+            </div>
 
-              </li>
+          </li>
 
-            </ul>
+        </ul>
 
-          </section>
-    </div>  
-  </div>  
-
-
-<!------------Projects----------------->
+      </section>
+    </div>
+  </div>
 
 
+  <!------------Projects----------------->
 
-<div id="portfolio">
+
+
+  <div id="portfolio">
     <div class="container">
-        <h1 class="sub-title">My Projects</h1>
-        <ul class="project-posts-list">
-            <li class="project-post-item">
-              <a href="https://github.com/harikakanakam/Vision-of-Machine-Unlearning" target="_blank">
-                <figure class="project-banner-box">
-                  <img src="images/Unlearning.png" alt="Machine Unlearning" loading="lazy">
-                </figure>
+      <h1 class="sub-title">My Projects</h1>
+      <ul class="project-posts-list">
+        <li class="project-post-item">
+          <a href="https://github.com/harikakanakam/Vision-of-Machine-Unlearning" target="_blank">
+            <figure class="project-banner-box">
+              <img src="images/Unlearning.png" alt="Machine Unlearning" loading="lazy">
+            </figure>
 
-                <div class="project-content">
+            <div class="project-content">
 
-                  <div class="project-meta">
-                    <p class="project-category">Machine Unlearning</p>
-                    <span class="dot"></span>
-                    <p class="project-category">Knowledge Distillation</p>
-                    <span class="dot"></span>
-                    <p class="project-category">KLD</p>
-                  </div>
+              <div class="project-meta">
+                <p class="project-category">Machine Unlearning</p>
+                <span class="dot"></span>
+                <p class="project-category">Knowledge Distillation</p>
+                <span class="dot"></span>
+                <p class="project-category">KLD</p>
+              </div>
 
-                  <h3 class="h4 project-item-title">The Vision of Machine Unlearning</h3>
-                    <p class="project-text">
-                      Implemented machine unlearning algorithms to remove the effect of unwanted samples from the trained ML model.
-                    </p>
-                  
-                    <p class="project-text">
-                      Implemented teacher-student (knowledge distillation) and zero-shot architecture for class-based unlearning by defining a custom loss function as an extension for the existing KL-Divergence loss, thereby outperforming the base implementation by 7%.
-                    </p>
-                  
-                    <p class="project-text">
-                      Identified similar gradients by Gradient Matching and re-initialized to introduce model discontinuity, improving 15% efficiency.
-                    </p>
+              <h3 class="h4 project-item-title">The Vision of Machine Unlearning</h3>
+              <p class="project-text">
+                Implemented machine unlearning algorithms to remove the effect of unwanted samples from the trained ML
+                model.
+              </p>
 
-                    <div class="project-tech">
-                      <span class="tech">Python</span>
-                    </div>
-                    <div class="project-tech">
-                      <span class="tech">MIA Attacks</span>
-                    </div>
-                    <div class="project-tech">
-                      <span class="tech">TensorFlow</span>
-                    </div>
-                    <div class="project-tech">
-                      <span class="tech">Gradient Matching</span>
-                    </div>
+              <p class="project-text">
+                Implemented teacher-student (knowledge distillation) and zero-shot architecture for class-based
+                unlearning by defining a custom loss function as an extension for the existing KL-Divergence loss,
+                thereby outperforming the base implementation by 7%.
+              </p>
 
-                </div>
+              <p class="project-text">
+                Identified similar gradients by Gradient Matching and re-initialized to introduce model discontinuity,
+                improving 15% efficiency.
+              </p>
 
-              </a>
-            </li>
-            <li class="project-post-item">
-              <a href="https://github.com/harikakanakam/User-Interactive-Image-Classification" target="_blank">
-                <figure class="project-banner-box">
-                  <img src="images/img-classification-UI.jpg" alt="Image Classification and Segmentation" loading="lazy">
-                </figure>
-  
-                <div class="project-content">
-  
-                  <div class="project-meta">
-                    <p class="project-category">Object Detection</p>
-                    <span class="dot"></span>
-                    <p class="project-category">Object Segmentation</p>
-                    <span class="dot"></span>
-                    <p class="project-category">Deployment</p>
-                  </div>
-  
-                  <h3 class="h4 project-item-title">User User Interactive Image Classification</h3>
-                    <p class="project-text">
-                      Developed a user interactive platform to extract the objects with/without the background from the user uploaded images.
-                    </p>   
-                    <p class="project-text">
-                      Utilized Mask R-CNN for image classification and segmentation, achieving a 95\% extraction rate for the classes known by model.
-                    </p>
-                    <p class="project-text">
-                      Leveraged the application by using FastAPI and ReactJS frameworks for backend and frontend and hosted on AWS cloud, thereby providing a solution that is reliable, flexible, and scalable.
-                    </p>
-                    <div class="project-tech">
-                      <span class="tech">Python</span>
-                    </div>
-                    <div class="project-tech">
-                      <span class="tech">AWS</span>
-                    </div>
-                    <div class="project-tech">
-                      <span class="tech">ReactJS</span>
-                    </div>
-                    <div class="project-tech">
-                      <span class="tech">Mask R-CNN</span>
-                    </div>
-                    <div class="project-tech">
-                      <span class="tech">FastAPI</span>
-                    </div>
-                   <h3></h3> 
-                </div>
-  
-              </a>
-            </li>
-  
-            <li class="project-post-item">
-                <a href="https://github.com/harikakanakam/Home-Credit-Default-Risk-Prediction" target="_blank">
-  
-                  <figure class="project-banner-box">
-                    <!-- img ref: https://i.ytimg.com/vi/01pUL0ex8H8/maxresdefault.jpg -->
-                    <img src="./images/HCDR.jpg" alt="Home Credit Default Risk Prediction" loading="lazy">
-                  </figure>
-  
-                  <div class="project-content">
-  
-                    <div class="project-meta">
-                      <p class="project-category">Feature Engineering</p>
-  
-                      <span class="dot"></span>
-  
-                      <p class="project-category">Regression</p>
-                      
-                      <span class="dot"></span>
-  
-                      <p class="project-category">Prediction</p>
-                      
-                    </div>
-  
-                    <h3 class="h4 project-item-title">Home Credit Default Risk Prediction</h3>
-                      <p class="project-text">
-                        Performed exploratory data analysis (EDA) to gain a deep understanding of the dataset, uncovering correlations and outliers.
-                      </p>
-                    
-                      <p class="project-text">
-                        Implemented feature engineering techniques to generate new features, enhancing predictive capabilities of the models. 
-                      </p>
-                    
-                      <p class="project-text">
-                        Developed preprocessing pipelines to handle missing values, categorical variables, and feature scaling, ensuring data quality and compatibility for modeling. Built and evaluated ML models to predict loan default likelihood with 92\% accuracy.
-                      </p>
-  
-                      <div class="project-tech">
-                        <span class="tech">Python</span>
-                      </div>
-                      <div class="project-tech">
-                        <span class="tech">F1 score</span>
-                      </div>
-                      <div class="project-tech">
-                        <span class="tech">sklearn</span>
-                      </div>
-                      <div class="project-tech">
-                        <span class="tech">Hyper Parameter Tuning</span>
-                      </div>
-  
-                  </div>
-  
-                </a>
-              </li>
-              <li class="project-post-item">
-                <a href="https://github.com/harikakanakam/Tableau-Analytics-and-Visualization-Challenge" target="_blank">
-  
-                  <figure class="project-banner-box">
-                    <!-- img ref: https://i.ytimg.com/vi/01pUL0ex8H8/maxresdefault.jpg -->
-                    <img src="./images/college-sales-analysis.png" alt="Home Credit Default Risk Prediction" loading="lazy">
-                  </figure>
-  
-                  <div class="project-content">
-  
-                    <div class="project-meta">
-                      <p class="project-category">Data Cleaning</p>
-  
-                      <span class="dot"></span>
-  
-                      <p class="project-category">Visualization</p>
-                      
-                      <!-- <span class="dot"></span>
+              <div class="project-tech">
+                <span class="tech">Python</span>
+              </div>
+              <div class="project-tech">
+                <span class="tech">MIA Attacks</span>
+              </div>
+              <div class="project-tech">
+                <span class="tech">TensorFlow</span>
+              </div>
+              <div class="project-tech">
+                <span class="tech">Gradient Matching</span>
+              </div>
+
+            </div>
+
+          </a>
+        </li>
+        <li class="project-post-item">
+          <a href="https://github.com/harikakanakam/User-Interactive-Image-Classification" target="_blank">
+            <figure class="project-banner-box">
+              <img src="images/img-classification-UI.jpg" alt="Image Classification and Segmentation" loading="lazy">
+            </figure>
+
+            <div class="project-content">
+
+              <div class="project-meta">
+                <p class="project-category">Object Detection</p>
+                <span class="dot"></span>
+                <p class="project-category">Object Segmentation</p>
+                <span class="dot"></span>
+                <p class="project-category">Deployment</p>
+              </div>
+
+              <h3 class="h4 project-item-title">User User Interactive Image Classification</h3>
+              <p class="project-text">
+                Developed a user interactive platform to extract the objects with/without the background from the user
+                uploaded images.
+              </p>
+              <p class="project-text">
+                Utilized Mask R-CNN for image classification and segmentation, achieving a 95\% extraction rate for the
+                classes known by model.
+              </p>
+              <p class="project-text">
+                Leveraged the application by using FastAPI and ReactJS frameworks for backend and frontend and hosted on
+                AWS cloud, thereby providing a solution that is reliable, flexible, and scalable.
+              </p>
+              <div class="project-tech">
+                <span class="tech">Python</span>
+              </div>
+              <div class="project-tech">
+                <span class="tech">AWS</span>
+              </div>
+              <div class="project-tech">
+                <span class="tech">ReactJS</span>
+              </div>
+              <div class="project-tech">
+                <span class="tech">Mask R-CNN</span>
+              </div>
+              <div class="project-tech">
+                <span class="tech">FastAPI</span>
+              </div>
+              <h3></h3>
+            </div>
+
+          </a>
+        </li>
+
+        <li class="project-post-item">
+          <a href="https://github.com/harikakanakam/Home-Credit-Default-Risk-Prediction" target="_blank">
+
+            <figure class="project-banner-box">
+              <!-- img ref: https://i.ytimg.com/vi/01pUL0ex8H8/maxresdefault.jpg -->
+              <img src="./images/HCDR.jpg" alt="Home Credit Default Risk Prediction" loading="lazy">
+            </figure>
+
+            <div class="project-content">
+
+              <div class="project-meta">
+                <p class="project-category">Feature Engineering</p>
+
+                <span class="dot"></span>
+
+                <p class="project-category">Regression</p>
+
+                <span class="dot"></span>
+
+                <p class="project-category">Prediction</p>
+
+              </div>
+
+              <h3 class="h4 project-item-title">Home Credit Default Risk Prediction</h3>
+              <p class="project-text">
+                Performed exploratory data analysis (EDA) to gain a deep understanding of the dataset, uncovering
+                correlations and outliers.
+              </p>
+
+              <p class="project-text">
+                Implemented feature engineering techniques to generate new features, enhancing predictive capabilities
+                of the models.
+              </p>
+
+              <p class="project-text">
+                Developed preprocessing pipelines to handle missing values, categorical variables, and feature scaling,
+                ensuring data quality and compatibility for modeling. Built and evaluated ML models to predict loan
+                default likelihood with 92\% accuracy.
+              </p>
+
+              <div class="project-tech">
+                <span class="tech">Python</span>
+              </div>
+              <div class="project-tech">
+                <span class="tech">F1 score</span>
+              </div>
+              <div class="project-tech">
+                <span class="tech">sklearn</span>
+              </div>
+              <div class="project-tech">
+                <span class="tech">Hyper Parameter Tuning</span>
+              </div>
+
+            </div>
+
+          </a>
+        </li>
+        <li class="project-post-item">
+          <a href="https://github.com/harikakanakam/Tableau-Analytics-and-Visualization-Challenge" target="_blank">
+
+            <figure class="project-banner-box">
+              <!-- img ref: https://i.ytimg.com/vi/01pUL0ex8H8/maxresdefault.jpg -->
+              <img src="./images/college-sales-analysis.png" alt="Home Credit Default Risk Prediction" loading="lazy">
+            </figure>
+
+            <div class="project-content">
+
+              <div class="project-meta">
+                <p class="project-category">Data Cleaning</p>
+
+                <span class="dot"></span>
+
+                <p class="project-category">Visualization</p>
+
+                <!-- <span class="dot"></span>
   
                       <p class="project-category">Prediction</p> -->
-                      
-                    </div>
-  
-                    <h3 class="h4 project-item-title">Sales Analysis of College life data using Tableau</h3>
-                      <p class="project-text">
-                        Conducted exploratory data analysis and and examined sales and revenue trends across demographics for a Sales Analysis.
-                      </p>
-                    
-                      <p class="project-text">
-                        Developed impactful visualizations to uncover significant trends and identify key factors influencing sales and revenue growth. 
-                      </p>
-                    
-                      <p class="project-text">
-                        Delivered top three strategic recommendations poised to drive business growth, supported by data-driven insights.
-                      </p>
 
-                      <p class="project-text">
-                        Implemented proactive measures for continuous performance monitoring, optimization, and strategic adaptation.
-                      </p>
-  
-                      <div class="project-tech">
-                        <span class="tech">Tableau</span>
-                      </div>
-                      <div class="project-tech">
-                        <span class="tech">sql</span>
-                      </div>
-                      <div class="project-tech">
-                        <span class="tech">Excel</span>
-                      </div>
-  
-                  </div>
-  
-                </a>
-              </li>
-        </ul>
+              </div>
+
+              <h3 class="h4 project-item-title">Sales Analysis of College life data using Tableau</h3>
+              <p class="project-text">
+                Conducted exploratory data analysis and and examined sales and revenue trends across demographics for a
+                Sales Analysis.
+              </p>
+
+              <p class="project-text">
+                Developed impactful visualizations to uncover significant trends and identify key factors influencing
+                sales and revenue growth.
+              </p>
+
+              <p class="project-text">
+                Delivered top three strategic recommendations poised to drive business growth, supported by data-driven
+                insights.
+              </p>
+
+              <p class="project-text">
+                Implemented proactive measures for continuous performance monitoring, optimization, and strategic
+                adaptation.
+              </p>
+
+              <div class="project-tech">
+                <span class="tech">Tableau</span>
+              </div>
+              <div class="project-tech">
+                <span class="tech">sql</span>
+              </div>
+              <div class="project-tech">
+                <span class="tech">Excel</span>
+              </div>
+
+            </div>
+
+          </a>
+        </li>
+      </ul>
     </div>
-</div>
+  </div>
 
 
-<!-- ----------contact------------- -->
-<div id="contact">
+  <!-- ----------contact------------- -->
+  <div id="contact">
     <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Lets Connect!</h1>
-                <p><i class="fas fa-paper-plane"></i> hkanakam@iu.edu</p>
-                <p><i class="fas fa-phone-square-alt"></i> 1-812-778-4329</p>
-                <div class="social-icons">
-                    <!-- <a href="https://www.facebook.com/akshat.chhajer.14"><i class="fab fa-facebook"></i></a>
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Lets Connect!</h1>
+          <p><i class="fa fa-envelope"></i> hkanakam@iu.edu</p>
+          <p><i class="fas fa-phone-square-alt"></i> 1-812-778-4329</p>
+          <div class="social-icons">
+            <!-- <a href="https://www.facebook.com/akshat.chhajer.14"><i class="fab fa-facebook"></i></a>
               
                     <a href="https://www.instagram.com/akshatchhajer/"><i class="fab fa-instagram"></i></a> -->
-                    <a href="https://www.linkedin.com/in/harikakanakam"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://www.github.com/harikakanakam"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/harikakanakam" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.github.com/harikakanakam" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
 
-                </div>
-                <a href="images/Harika_Kanakam_Resume_v3.3.pdf" download class="btn btn2">Download Resume</a>
-            </div>
-            
-            <div class="contact-right">
-              <!-- <form 
+          </div>
+          <a href="images/Harika_Kanakam_Resume_v3.4.pdf" download class="btn btn2">Download Resume</a>
+        </div>
+
+        <div class="contact-right">
+          <!-- <form 
               action="https://docs.google.com/forms/d/e/1FAIpQLSe2s297J-N55U_QvRTq6Um1Ili4sEDBtNSy_L52ZgI_L12Htg/formResponse" 
               class="form" target="_blank"
               data-form>
@@ -740,72 +787,84 @@
               </button>
 
             </form> -->
-            <!-- <form name="submit-to-google-sheet" method="post" action="send_email.php">
-              <input type="text" name="Name" placeholder="Your Name" required>
-              <input type="email" name="Email" placeholder="Your Email" required>
-              <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-              <button type="submit" class="btn btn2">Submit</button>
-          </form> -->
-                <span id="msg"></span>
-            </div>
+          <div class="form-group">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+          </div>
+          <div class="form-group">
+            <textarea name="message" id="message" rows="3" placeholder="Your Message"></textarea>
+          </div>
+          <button type="submit" onclick="sendMails()" class="btn btn2">Submit</button>
+          <span id="msg"></span>
         </div>
+      </div>
     </div>
     <div class="copyright">
-        <p>Copyright © 2024 Harika's Portfolio | Created by Harika Kanakam</p>
+      <p>Copyright © 2024 Harika's Portfolio | Created by Harika Kanakam</p>
     </div>
-</div>
+  </div>
 
 
 
-<script>
+  <script>
+    function sendMails() {
+      var params = {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        message: document.getElementById("message").value,
+      };
 
+      emailjs.send("service_83jtrm5", "template_xnp1ruj", params)
+        .then(res => {
+          document.getElementById("name").value = "";
+          document.getElementById("email").value = "";
+          document.getElementById("message").value = "";
+          console.log(res);
+          alert("Your message sent successfully!!")
+
+        })
+        .catch(err => console.log(err));
+
+    }
     var tablinks = document.getElementsByClassName("tab-links");
     var tabcontents = document.getElementsByClassName("tab-contents");
 
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
-        }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
     }
 
-</script>
+  </script>
 
-<script>
+  <script>
 
     var sidemeu = document.getElementById("sidemenu");
 
-    function openmenu(){
-        sidemeu.style.right = "0";
+    function openmenu() {
+      sidemeu.style.right = "0";
     }
-    function closemenu(){
-        sidemeu.style.right = "-200px";
+    function closemenu() {
+      sidemeu.style.right = "-200px";
     }
 
-</script>
-
-<script>
-    // const scriptURL = 'https://forms.gle/VjycenJbVcooa3he7'
-    // const form = document.forms['submit-to-google-sheet']
-    // const msg = document.getElementById("msg")
-  
-    // form.addEventListener('submit', e => {
-    //   e.preventDefault()
-    //   fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-    //     .then(response => {
-    //         msg.innerHTML = "Message sent successfully"
-    //         setTimeout(function(){
-    //             msg.innerHTML = ""
-    //         },5000)
-    //         form.reset()
-    //     })
-    //     .catch(error => console.error('Error!', error.message))
-    // })
   </script>
-
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init({
+        publicKey: "Swiy7NNQc2HbWYqGz",
+      });
+    })();
+  </script>
 </body>
+
 </html>
